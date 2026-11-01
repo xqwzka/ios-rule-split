@@ -1,0 +1,7 @@
+# dyip-proxy
+# Mihomo rule-set, no policy (policy set in Mihomo main config)
+
+payload:
+- 'DOMAIN-SUFFIX,snssdk.com'
+- 'DOMAIN-SUFFIX,amemv.com'
+- 'DOMAIN-SUFFIX,zijieapi.com'
