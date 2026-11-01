@@ -1,18 +1,8 @@
-# NAME: telegram
-# SOURCES: blackmatrix7/ios_rule_script rule/QuantumultX/TelegramSG, TelegramUS, Telegram, in that order
-# POLICY MAPPING: from xqwzka/quantumult-X embyt g.list #tg分流, unchanged (TelegramSG -> 日本, TelegramUS -> 美国, Telegram -> Telegram)
-# NOTE: embyt g.list SG section header says 香港 but its rules carry policy 日本; policy kept as 日本 per 策略不变
-# UPDATED: 2026-11-01
-# TOTAL: 45 (TelegramSG 3 + TelegramUS 2 + Telegram 40)
-# NOTE: 2001:b28:f23f::/48 appears in both SG and Telegram sections, as in embyt g.list; SG section comes first so it wins
-# ===== Telegram SG -> 日本 =====
 IP-CIDR,91.108.16.0/22,日本
 IP-CIDR,91.108.56.0/22,日本
 IP6-CIDR,2001:b28:f23f::/48,日本
-# ===== Telegram US -> 美国 =====
 IP-CIDR,91.108.12.0/22,美国
 IP6-CIDR,2001:b28:f23d::/48,美国
-# ===== Telegram 通用 -> Telegram =====
 HOST,api.imem.app,Telegram
 HOST,api.swiftgram.app,Telegram
 HOST-SUFFIX,cdn-telegram.org,Telegram
