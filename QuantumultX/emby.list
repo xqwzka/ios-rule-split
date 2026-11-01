@@ -1,9 +1,3 @@
-# NAME: emby
-# SOURCE: xqwzka/quantumult-X embyt g.list, #emby分流 section
-# UPDATED: 2026-11-01
-# TOTAL: 6
-# HOST: 1
-# HOST-KEYWORD: 5
 HOST-KEYWORD,emby,emby
 HOST,ss.iposl.com,emby
 HOST-KEYWORD,poe.o7o7.cn,emby
