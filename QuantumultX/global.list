@@ -16200,6 +16200,7 @@ IP-ASN,9395,direct
 IP-ASN,9535,direct
 IP-ASN,9800,direct
 IP-ASN,9886,direct
+HOST-SUFFIX,kss.78qyz.top,direct
 HOST,ai.google.dev,proxy
 HOST,aistudio.google.com,proxy
 HOST,akmcdnoversea-tw.inter.ptqy.gitv.tv,proxy
