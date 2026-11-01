@@ -1,16 +1,3 @@
-# NAME: meat
-# AUTHOR: sry (merged from blackmatrix7/ios_rule_script)
-# SOURCES:
-#   - rule/QuantumultX/Facebook/Facebook.list (2025-06-06, 570 rules)
-#   - rule/QuantumultX/Instagram/Instagram.list (2025-06-06, 4 rules)
-#   - rule/QuantumultX/Threads/Threads.list (2024-01-08, 1 rule)
-# UPDATED: 2026-11-01
-# MERGED: Facebook + Instagram + Threads, deduplicated by type+value, no policy column (policy is set by force-policy in the filter_remote line)
-# TOTAL: 572
-# HOST-KEYWORD: 3
-# HOST-SUFFIX: 545
-# IP-ASN: 1
-# IP-CIDR: 23
 HOST-SUFFIX,aboutfacebook.com
 HOST-SUFFIX,accessfacebookfromschool.com
 HOST-SUFFIX,accountkit.com
