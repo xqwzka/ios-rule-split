@@ -1,4 +1,4 @@
-# ios规则分流
+# ios-rule-split
 
 自用。圈X（QuantumultX）分流规则，源自 blackmatrix7/ios_rule_script，合并后自用。
 
@@ -8,7 +8,7 @@
 
 ```text
 [filter_remote]
-https://raw.githubusercontent.com/xqwzka/ios-fenliu-guize/main/QuantumultX/meat.list, tag=meat, force-policy=meat, update-interval=86400, enabled=true
+https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/meat.list, tag=meat, force-policy=meat, update-interval=86400, enabled=true
 ```
 
 - 文件：`QuantumultX/meat.list`
