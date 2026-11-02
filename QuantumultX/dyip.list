@@ -14,3 +14,4 @@ HOST,v9-awememusicpgc.amemv.com,direct
 HOST-SUFFIX,snssdk.com,proxy
 HOST-SUFFIX,amemv.com,proxy
 HOST-SUFFIX,zijieapi.com,proxy
+IP-CIDR,8.134.241.67/32,proxy
