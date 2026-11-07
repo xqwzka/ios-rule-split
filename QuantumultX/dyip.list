@@ -11,6 +11,6 @@ HOST-SUFFIX,bytecdn.com,direct
 HOST-SUFFIX,zjcdn.com,direct
 HOST-KEYWORD,awememusicpgc,direct
 HOST,v9-awememusicpgc.amemv.com,direct
-HOST-SUFFIX,snssdk.com,抖音策略
-HOST-SUFFIX,amemv.com,抖音策略
-HOST-SUFFIX,zijieapi.com,抖音策略
+HOST-SUFFIX,snssdk.com,proxy
+HOST-SUFFIX,amemv.com,proxy
+HOST-SUFFIX,zijieapi.com,proxy
