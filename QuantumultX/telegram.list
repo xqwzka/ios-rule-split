@@ -66,3 +66,7 @@ IP-CIDR,95.161.64.0/20,Telegram
 IP6-CIDR,2001:b28:f23c::/48,Telegram
 IP6-CIDR,2a0a:f280:203::/48,Telegram
 IP6-CIDR,2a0a:f280::/32,Telegram
+IP-CIDR,103.36.28.0/22,Telegram
+IP-CIDR,112.73.96.0/19,Telegram
+IP-CIDR,218.98.111.0/24,Telegram
+IP-CIDR,43.240.56.0/21,Telegram
