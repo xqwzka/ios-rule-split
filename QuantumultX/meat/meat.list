@@ -590,3 +590,9 @@ IP-CIDR,69.171.224.0/19
 IP-CIDR,69.63.176.0/20
 IP-CIDR,74.119.76.0/22
 HOST-SUFFIX,threads.com
+HOST-SUFFIX,analytics.facebook.com
+HOST-SUFFIX,developers.facebook.com
+HOST-SUFFIX,fna.fbcdn.net
+HOST-SUFFIX,pixel.facebook.com
+HOST-SUFFIX,graph-fallback.instagram.com
+HOST-SUFFIX,graph.instagram.com
