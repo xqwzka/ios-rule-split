@@ -5,7 +5,6 @@ HOST,appldnld.apple.com,reject
 HOST,appldnld.apple.com.akadns.net,reject
 HOST,appldnld.apple.com.mwcname.com,reject
 HOST,appldnld.g.aaplimg.com,reject
-HOST,configuration.apple.com,reject
 HOST,gdmf-cdn.apple.com.akadns.net,reject
 HOST,gdmf-cdn.origin-apple.com.akadns.net,reject
 HOST,gdmf-lb.apple.com.akadns.net,reject
@@ -22,8 +21,6 @@ HOST,gg.apple.com.mwcname.com,reject
 HOST,gg.g.aaplimg.com,reject
 HOST,gnf-mdn.apple.com,reject
 HOST,gnf-mr.apple.com,reject
-HOST,gs.apple.com,reject
-HOST,ig.apple.com,reject
 HOST,iphonesubmissions-cdn.apple.com.akadns.net,reject
 HOST,iphonesubmissions-cdn.origin-apple.com.akadns.net,reject
 HOST,iphonesubmissions-lb.apple.com.akadns.net,reject
@@ -46,8 +43,6 @@ HOST,ocsp.apple.com,reject
 HOST,ocsp.apple.com.akadns.net,reject
 HOST,ocsp.apple.com.mwcname.com,reject
 HOST,ocsp.g.aaplimg.com,reject
-HOST,oscdn.apple.com,reject
-HOST,osrecovery.apple.com,reject
 HOST,radarsubmissions-cdn.apple.com.akadns.net,reject
 HOST,radarsubmissions-cdn.origin-apple.com.akadns.net,reject
 HOST,radarsubmissions-lb.apple.com.akadns.net,reject
@@ -55,10 +50,6 @@ HOST,radarsubmissions.apple.com,reject
 HOST,radarsubmissions.apple.com.akadns.net,reject
 HOST,radarsubmissions.apple.com.mwcname.com,reject
 HOST,radarsubmissions.g.aaplimg.com,reject
-HOST,skl.apple.com,reject
-HOST,swcdn.apple.com,reject
-HOST,swdist.apple.com,reject
-HOST,swdownload.apple.com,reject
 HOST,swpost.apple.com,reject
 HOST,swscan-cdn.apple.com.akadns.net,reject
 HOST,swscan-cdn.origin-apple.com.akadns.net,reject
@@ -80,8 +71,15 @@ HOST-SUFFIX,appldnld-lb.apple.com.akadns.net,reject
 HOST-SUFFIX,appldnld.apple.com,reject
 HOST-SUFFIX,appldnld.apple.com.akadns.net,reject
 HOST-SUFFIX,appldnld.g.aaplimg.com,reject
+HOST-SUFFIX,configuration.apple.com,reject
+HOST-SUFFIX,fcs-keys-pub-prod.cdn-apple.com,reject
+HOST-SUFFIX,gdmf-ados.apple.com,reject
 HOST-SUFFIX,gdmf.apple.com,reject
 HOST-SUFFIX,gdmf.apple.com.akadns.net,reject
+HOST-SUFFIX,gg.apple.com,reject
+HOST-SUFFIX,gs.apple.com,reject
+HOST-SUFFIX,gsra.apple.com,reject
+HOST-SUFFIX,ig.apple.com,reject
 HOST-SUFFIX,mesu-cdn.apple.com.akadns.net,reject
 HOST-SUFFIX,mesu-cdn.origin-apple.com.akadns.net,reject
 HOST-SUFFIX,mesu.apple.com,reject
@@ -89,3 +87,14 @@ HOST-SUFFIX,mesu.g.aaplimg.com,reject
 HOST-SUFFIX,ocsp-lb.apple.com.akadns.net,reject
 HOST-SUFFIX,ocsp.apple.com,reject
 HOST-SUFFIX,ocsp.g.aaplimg.com,reject
+HOST-SUFFIX,oscdn.apple.com,reject
+HOST-SUFFIX,osrecovery.apple.com,reject
+HOST-SUFFIX,skl.apple.com,reject
+HOST-SUFFIX,swcdn.apple.com,reject
+HOST-SUFFIX,swdist.apple.com,reject
+HOST-SUFFIX,swdownload.apple.com,reject
+HOST-SUFFIX,swscan.apple.com,reject
+HOST-SUFFIX,updates-http.cdn-apple.com,reject
+HOST-SUFFIX,updates.cdn-apple.com,reject
+HOST-SUFFIX,wkms-public.apple.com,reject
+HOST-SUFFIX,xp.apple.com,reject
