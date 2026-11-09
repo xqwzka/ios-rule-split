@@ -1,0 +1,25 @@
+HOST,identity.apple.com,proxy
+HOST-SUFFIX,akadns.net,proxy
+HOST-SUFFIX,push.apple.com,proxy
+HOST-KEYWORD,apple.com.edgekey.net,proxy
+IP-CIDR,17.188.128.0/18,proxy,no-resolve
+IP-CIDR,17.188.20.0/23,proxy,no-resolve
+IP-CIDR,17.249.0.0/16,proxy,no-resolve
+IP-CIDR,17.252.0.0/16,proxy,no-resolve
+IP-CIDR,17.57.144.0/22,proxy,no-resolve
+IP6-CIDR,2403:300:a42::/48,proxy,no-resolve
+IP6-CIDR,2403:300:a51::/48,proxy,no-resolve
+IP6-CIDR,2620:149:a44::/48,proxy,no-resolve
+IP6-CIDR,2a01:b740:a42::/48,proxy,no-resolve
+#apple ai内置分流
+HOST-SUFFIX,gateway.icloud.com,proxy
+HOST-SUFFIX,apple-relay.apple.com,proxy
+HOST-SUFFIX,apple-relay.fastly-edge.com,proxy
+HOST-SUFFIX,apple-relay.cloudflare.com,proxy
+HOST-SUFFIX,guzzoni.apple.com,proxy
+HOST-SUFFIX,cp4.cloudflare.com,proxy
+HOST-SUFFIX,gspe1-ssl.ls.apple.com,proxy
+HOST-SUFFIX,smoot.apple.com,proxy
+HOST-SUFFIX,apple-relay.akamaized.net,proxy
+HOST-SUFFIX,apple-relay.mask.apple-dns.net,proxy
+HOST-SUFFIX,aapps.mzstatic.com,proxy
