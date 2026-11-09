@@ -1,0 +1,18 @@
+# Shadowrocket
+
+- **交易所**（[exchange.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/exchange.list)）
+- **屏蔽更新**（[ios-update.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/ios-update.list)）
+- **TG**（[telegram.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/telegram.list)）
+- **TG 新加坡**（[telegram-sg.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/telegram-sg.list)）
+- **TG 美国**（[telegram-us.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/telegram-us.list)）
+- **抖音 IP 直连**（[dyip-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/dyip-direct.list)）
+- **抖音 IP 走代理**（[dyip-proxy.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/dyip-proxy.list)）
+- **Meta 系**（[meat.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/meat.list)）
+- **Emby**（[emby.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/emby.list)）
+- **推送**（[apple-push.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/apple-push.list)）
+- **谷歌**（[google.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/google.list)）
+- **广告终结者**（[adblock.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock.list)）
+- **广告放行**（[adblock-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock-direct.list)）
+- **全球分流直连**（[global-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/global-direct.list)）
+- **全球分流走代理**（[global-proxy.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/global-proxy.list)）
+- **AI**（[ai.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/ai.list)）
