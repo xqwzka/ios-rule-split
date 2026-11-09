@@ -467,7 +467,6 @@ HOST-SUFFIX,best2pay.net,all
 HOST-SUFFIX,bestchange.com,all
 HOST-SUFFIX,bestchange.net,all
 HOST-SUFFIX,biadglomdzyys.online,all
-HOST-SUFFIX,bilibili.tv,all
 HOST-SUFFIX,bingstatic.com,all
 HOST-SUFFIX,biometuples.com,all
 HOST-SUFFIX,blackedraw.com,all
@@ -647,7 +646,6 @@ HOST-SUFFIX,guetardilliskyas.cyou,all
 HOST-SUFFIX,guppiessunyietucuna.cyou,all
 HOST-SUFFIX,h264.io,all
 HOST-SUFFIX,habenabray.cfd,all
-HOST-SUFFIX,hailuoai.com,all
 HOST-SUFFIX,happ.info,all
 HOST-SUFFIX,happ.su,all
 HOST-SUFFIX,harkssnurp.com,all
@@ -742,7 +740,6 @@ HOST-SUFFIX,megas4.com,all
 HOST-SUFFIX,mgvjcurwdujhf.site,all
 HOST-SUFFIX,mhaafduliizbe.site,all
 HOST-SUFFIX,mhgui.com,all
-HOST-SUFFIX,minimax.io,all
 HOST-SUFFIX,minkch.com,all
 HOST-SUFFIX,mirdc.org.tw,all
 HOST-SUFFIX,mireapnvztyru.website,all
@@ -837,7 +834,6 @@ HOST-SUFFIX,pv-cdn.net,all
 HOST-SUFFIX,pxfjndpfpyiqh.site,all
 HOST-SUFFIX,pyup.io,all
 HOST-SUFFIX,qdiamjczxvbxx.online,all
-HOST-SUFFIX,qianwen.com,all
 HOST-SUFFIX,qk2fqqtx7p3r7nl.cfd,all
 HOST-SUFFIX,qnapsupport.net,all
 HOST-SUFFIX,qoqqgkzavy.com,all
@@ -1001,7 +997,6 @@ HOST-SUFFIX,x86.fr,all
 HOST-SUFFIX,xauxpvmriexkj.space,all
 HOST-SUFFIX,xertdrlq.com,all
 HOST-SUFFIX,xiaoaiassist.com,all
-HOST-SUFFIX,xiaomimimo.com,all
 HOST-SUFFIX,xingyeai.com,all
 HOST-SUFFIX,xlhjhcxrddfuy.site,all
 HOST-SUFFIX,xlmamdeykpist.online,all
@@ -1049,7 +1044,6 @@ HOST-SUFFIX,yuwtlkeagkqi.com,all
 HOST-SUFFIX,yydkoulucwqzi.online,all
 HOST-SUFFIX,z.29tj4fufueo4im.cfd,all
 HOST-SUFFIX,zenmux.ai,all
-HOST-SUFFIX,zhipucn.com,all
 HOST-SUFFIX,ziggo.nl,all
 HOST-SUFFIX,zipfjdlsiqcoz.space,all
 HOST-SUFFIX,zjclzojzgrfmy.space,all
@@ -1064,3 +1058,9 @@ IP-CIDR,112.73.96.0/19,all
 IP-CIDR,203.205.64.0/19,all
 IP-CIDR,218.98.111.0/24,all
 IP-CIDR,43.240.56.0/21,all
+HOST,anthropic.auth0.com,all
+HOST,cloudcode-pa.googleapis.com,all
+HOST-SUFFIX,copilot.microsoft.com,all
+HOST-SUFFIX,dify.ai,all
+HOST-SUFFIX,gemini.gstatic.com,all
+HOST-SUFFIX,hermes-agent.nousresearch.com,all
