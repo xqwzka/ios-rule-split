@@ -3,7 +3,7 @@
 # 节点留空：proxies 里没有节点，自己加（订阅或手动添加）；策略组里已经按 QX 写好节点名（甲骨文东京/日本ipv4/dmit美西/第一个美国/9.23公司/公司一年1），加上同名节点就能用；没加节点前 Mihomo 会报找不到节点，是正常的
 # 注意：QX 的 rewrite / mitm Mihomo 做不了，不含
 # IPv6 保持开启（不要关）
-# 规则顺序：本地规则 → 交易所 → TG → 抖音 → Meta → AI → Emby → 推送 → 谷歌 → 红果 → 广告 → 全球 → MATCH
+# 规则顺序：本地规则（CN 除外） → 交易所 → 屏蔽更新 → TG → 网页去广 → 抖音 → Meta → 谷歌 → AI → Emby → 推送 → 苹果 → 红果 → 广告 → 全球 → CN → MATCH
 # 直连规则一律排在同组代理/拦截规则之前（dyip-direct 在前、hongguo-direct 在前、adblock-direct 在前、global-direct 在前）
 
 port: 7890
@@ -323,7 +323,6 @@ rules:
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,224.0.0.0/24,DIRECT,no-resolve
   - IP-CIDR,182.254.116.0/24,DIRECT,no-resolve
-  - GEOIP,CN,DIRECT
   # 订阅规则（和 QX [filter_remote] 同顺序）
   - RULE-SET,exchange,日本
   - RULE-SET,ios-update,REJECT
@@ -334,15 +333,17 @@ rules:
   - RULE-SET,dyip-direct,DIRECT
   - RULE-SET,dyip-proxy,PROXY
   - RULE-SET,meat,ig
+  - RULE-SET,google,美国
   - RULE-SET,ai,PROXY
   - RULE-SET,emby,emby
   - RULE-SET,apple-push,PROXY
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,美国
   - RULE-SET,hongguo-direct,DIRECT
   - RULE-SET,hongguo,REJECT
   - RULE-SET,adblock-direct,DIRECT
   - RULE-SET,adblock,REJECT
   - RULE-SET,global-direct,DIRECT
   - RULE-SET,global-proxy,PROXY
+  # CN 兜底放最后：具体规则优先，匹配不到的国内 IP 再直连
+  - GEOIP,CN,DIRECT
   - MATCH,PROXY
