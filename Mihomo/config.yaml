@@ -47,52 +47,33 @@ proxy-groups:
       - 荷兰
       - 泰国
       - 马来西亚
+  - name: 抖音
+    type: select
+    proxies:
+      - 日本
+      - 新加坡
+      - 香港
+      - 美国
   - name: emby
     type: select
     proxies:
-      - PROXY
-      - DIRECT
-      - 新加坡
       - 日本
-      - 香港
-  - name: ig
-    type: select
-    proxies:
-      - 日本
-      - 香港
       - 新加坡
-      - 美国
-      - 台湾
-      - 韩国
-      - 英国
-      - 加拿大
-      - 德国
-      - 法国
-      - 荷兰
-      - 泰国
-      - 马来西亚
+      - 香港
   - name: Telegram
     type: select
     proxies:
       - 香港
       - 日本
       - 新加坡
-  - name: 抖音
+      - 美国
+  - name: meta
     type: select
     proxies:
-      - 日本
       - 香港
+      - 日本
       - 新加坡
       - 美国
-      - 台湾
-      - 韩国
-      - 英国
-      - 加拿大
-      - 德国
-      - 法国
-      - 荷兰
-      - 泰国
-      - 马来西亚
   - name: 节点选择
     type: select
     proxies:
@@ -333,7 +314,7 @@ rules:
   - RULE-SET,adblock4limbo,REJECT
   - RULE-SET,dyip-direct,DIRECT
   - RULE-SET,dyip-proxy,PROXY
-  - RULE-SET,meat,ig
+  - RULE-SET,meat,meta
   - RULE-SET,google,美国
   - RULE-SET,ai,PROXY
   - RULE-SET,emby,emby
