@@ -31,7 +31,6 @@ HOST-WILDCARD,log*-applog.fqnovel.com,reject
 HOST-SUFFIX,frontier100-toutiao-lf.fqnovel.com,reject
 HOST-SUFFIX,mon11-misc-lq.fqnovel.com,reject
 HOST-WILDCARD,*-misc-lq.fqnovel.com,reject
-HOST-WILDCARD,*-misc.fqnovel.com,reject
 HOST,applog.fqnovel.com,reject
 HOST-WILDCARD,ads*-normal.zijieapi.com,reject
 HOST-WILDCARD,ads*-normal-*.zijieapi.com,reject
@@ -42,7 +41,6 @@ HOST-WILDCARD,ecom*-normal-lq.ecombdapi.com,reject
 HOST-WILDCARD,ec*-core-lq.ecombdapi.com,reject
 HOST-WILDCARD,isaas*-normal-lq.ecombdapi.com,reject
 HOST-WILDCARD,v*-reading-ad.qznovelvod.com,reject
-HOST-WILDCARD,*-reading-ad.qznovelvod.com,reject
 HOST-SUFFIX,qznovelvod.com,direct
 HOST-SUFFIX,praisewindow.ugsdk.cn,reject
 HOST,praisewindow-sinfonlinea.ugsdk.cn,reject
@@ -123,7 +121,6 @@ HOST-SUFFIX,tobapplog.tobsnssdk.com,reject
 HOST-SUFFIX,toblog.tobsnssdk.com,reject
 HOST-SUFFIX,tsearch.snssdk.com,reject
 HOST-SUFFIX,vas-hl-x.snssdk.com,reject
-HOST-SUFFIX,video-cn.snssdk.com,reject
 HOST-SUFFIX,xlog.snssdk.com,reject
 HOST,adshare.toutiao.com,reject
 HOST-SUFFIX,ad.toutiao.com,reject
