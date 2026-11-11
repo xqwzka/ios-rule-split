@@ -1,0 +1,339 @@
+# Mihomo 主配置
+# 标准参考 QuantumultX/config.conf，规则全部用本仓库现有的 Mihomo yaml
+# 节点：把 proxies 里的 保持开启 换成你自己的节点（订阅或手动添加），策略组会自动跟随
+# 注意：不含苹果服务直连（QX 里是 blackmatrix7 Apple.list，Mihomo 这边仓库里没有对应文件），苹果服务会走 MATCH 代理
+# 注意：不含屏蔽系统更新（QX/SR 有 ios-update，Mihomo 这边仓库里没有对应文件）
+# 注意：QX 的 rewrite / mitm Mihomo 做不了，不含；QX 的 limbopro 网页去广规则也不含
+# IPv6 保持开启（不要关）
+# 规则顺序：本地规则 → 交易所 → TG → 抖音 → Meta → AI → Emby → 推送 → 谷歌 → 红果 → 广告 → 全球 → MATCH
+# 直连规则一律排在同组代理/拦截规则之前（dyip-direct 在前、hongguo-direct 在前、adblock-direct 在前、global-direct 在前）
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  fallback:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+
+proxies:
+  # 占位节点（192.0.2.1 是保留地址，连不上），换成你自己的节点即可
+  - name: 保持开启
+    type: ss
+    server: 192.0.2.1
+    port: 12345
+    cipher: aes-128-gcm
+    password: dummy
+
+proxy-groups:
+  # 策略组，名字和 QX 保持一致；地区组把 保持开启 换成你的节点名就能按延迟自动选
+  - name: PROXY
+    type: select
+    proxies:
+      - 保持开启
+      - 日本
+      - 美国
+      - 香港
+      - 新加坡
+  - name: emby
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - 新加坡
+      - 日本
+      - 香港
+  - name: ig
+    type: select
+    proxies:
+      - 日本
+      - 香港
+      - 新加坡
+      - 美国
+      - 台湾
+      - 韩国
+      - 英国
+      - 加拿大
+      - 德国
+      - 法国
+      - 荷兰
+      - 泰国
+      - 马来西亚
+  - name: Telegram
+    type: select
+    proxies:
+      - 香港
+      - 日本
+      - 新加坡
+  - name: 抖音
+    type: select
+    proxies:
+      - 日本
+      - 香港
+      - 新加坡
+      - 美国
+      - 台湾
+      - 韩国
+      - 英国
+      - 加拿大
+      - 德国
+      - 法国
+      - 荷兰
+      - 泰国
+      - 马来西亚
+  - name: 节点选择
+    type: select
+    proxies:
+      - PROXY
+      - 日本
+      - Telegram
+      - 落地
+      - 香港
+  - name: 落地
+    type: select
+    proxies:
+      - PROXY
+  - name: 香港
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 日本
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 新加坡
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 台湾
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 韩国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 英国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 美国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 加拿大
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 德国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 法国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 荷兰
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 泰国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+  - name: 马来西亚
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 保持开启
+
+rule-providers:
+  exchange:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/exchange.yaml"
+    path: ./rules/exchange.yaml
+    interval: 172800
+  telegram-sg:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/telegram-sg.yaml"
+    path: ./rules/telegram-sg.yaml
+    interval: 172800
+  telegram-us:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/telegram-us.yaml"
+    path: ./rules/telegram-us.yaml
+    interval: 172800
+  telegram:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/telegram.yaml"
+    path: ./rules/telegram.yaml
+    interval: 172800
+  dyip-direct:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/dyip-direct.yaml"
+    path: ./rules/dyip-direct.yaml
+    interval: 172800
+  dyip-proxy:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/dyip-proxy.yaml"
+    path: ./rules/dyip-proxy.yaml
+    interval: 172800
+  meat:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/meat.yaml"
+    path: ./rules/meat.yaml
+    interval: 172800
+  ai:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/ai.yaml"
+    path: ./rules/ai.yaml
+    interval: 172800
+  emby:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/emby.yaml"
+    path: ./rules/emby.yaml
+    interval: 172800
+  apple-push:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/apple-push.yaml"
+    path: ./rules/apple-push.yaml
+    interval: 172800
+  google:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/google.yaml"
+    path: ./rules/google.yaml
+    interval: 172800
+  hongguo-direct:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/hongguo-direct.yaml"
+    path: ./rules/hongguo-direct.yaml
+    interval: 172800
+  hongguo:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/hongguo.yaml"
+    path: ./rules/hongguo.yaml
+    interval: 172800
+  adblock-direct:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/adblock-direct.yaml"
+    path: ./rules/adblock-direct.yaml
+    interval: 172800
+  adblock:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/adblock.yaml"
+    path: ./rules/adblock.yaml
+    interval: 172800
+  global-direct:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/global-direct.yaml"
+    path: ./rules/global-direct.yaml
+    interval: 172800
+  global-proxy:
+    type: http
+    behavior: classical
+    url: "https://qx.beatsr.shop/gh/xqwzka/ios-rule-split/main/Mihomo/global-proxy.yaml"
+    path: ./rules/global-proxy.yaml
+    interval: 172800
+
+rules:
+  # 本地规则（和 QX [filter_local] 一致，优先于订阅规则）
+  - DOMAIN,cloud.oracle.com,DIRECT
+  - DOMAIN,hkextshort.weixin.qq.com,DIRECT
+  - DOMAIN-KEYWORD,nodeseek,日本
+  - DOMAIN-KEYWORD,clubsim,香港
+  - DOMAIN,df.link8.top,DIRECT
+  - DOMAIN,ad.12306.cn,DIRECT
+  - DOMAIN,sdkapp.uve.weibo.com,DIRECT
+  - DOMAIN-KEYWORD,github,PROXY
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/24,DIRECT,no-resolve
+  - IP-CIDR,182.254.116.0/24,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
+  # 订阅规则（和 QX [filter_remote] 同顺序）
+  - RULE-SET,exchange,日本
+  - RULE-SET,telegram-sg,日本
+  - RULE-SET,telegram-us,美国
+  - RULE-SET,telegram,Telegram
+  - RULE-SET,dyip-direct,DIRECT
+  - RULE-SET,dyip-proxy,PROXY
+  - RULE-SET,meat,ig
+  - RULE-SET,ai,PROXY
+  - RULE-SET,emby,emby
+  - RULE-SET,apple-push,PROXY
+  - RULE-SET,google,美国
+  - RULE-SET,hongguo-direct,DIRECT
+  - RULE-SET,hongguo,REJECT
+  - RULE-SET,adblock-direct,DIRECT
+  - RULE-SET,adblock,REJECT
+  - RULE-SET,global-direct,DIRECT
+  - RULE-SET,global-proxy,PROXY
+  - MATCH,PROXY
