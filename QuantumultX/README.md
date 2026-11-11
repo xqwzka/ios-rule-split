@@ -12,3 +12,4 @@
 - **广告终结者**（[adblock.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/adblock.list)）
 - **全球分流**（[global.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/global.list)）
 - **AI**（[ai.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/ai.list)）
+- **红果去广告**（[hongguo.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/hongguo.list)）
