@@ -1,5 +1,5 @@
 # Mihomo 主配置
-# 标准参考 QuantumultX/config.conf，规则全部用本仓库现有的 Mihomo yaml
+# 标准参考 Shadowrocket/config.conf，规则全部用本仓库现有的 Mihomo yaml
 # 节点留空：proxies 里没有节点，自己加（订阅或手动添加）；策略组里不写节点名，用的时候自己加
 # 注意：QX 的 rewrite / mitm Mihomo 做不了，不含
 # IPv6 保持开启（不要关）
@@ -18,6 +18,14 @@ dns:
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  # fake-ip 防泄漏：DNS 一律走 fake-ip 解析，真实 IP 只在代理出口解析，不走本地 DNS
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "localhost"
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
@@ -50,16 +58,19 @@ proxy-groups:
   - name: 抖音
     type: select
     proxies:
-      - 日本
+      - 美国
       - 新加坡
       - 香港
-      - 美国
+      - 日本
+      - PROXY
   - name: emby
     type: select
     proxies:
       - 日本
       - 新加坡
       - 香港
+      - PROXY
+      - DIRECT
   - name: Telegram
     type: select
     proxies:
@@ -67,13 +78,15 @@ proxy-groups:
       - 日本
       - 新加坡
       - 美国
+      - PROXY
   - name: meta
     type: select
     proxies:
-      - 香港
-      - 日本
       - 新加坡
+      - 日本
+      - 香港
       - 美国
+      - PROXY
   - name: 节点选择
     type: select
     proxies:
