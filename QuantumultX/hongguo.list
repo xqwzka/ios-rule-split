@@ -43,7 +43,6 @@ HOST-WILDCARD,ec*-core-lq.ecombdapi.com,reject
 HOST-WILDCARD,isaas*-normal-lq.ecombdapi.com,reject
 HOST-WILDCARD,v*-reading-ad.qznovelvod.com,reject
 HOST-WILDCARD,*-reading-ad.qznovelvod.com,reject
-HOST-WILDCARD,*-iosreadingvideo.qznovelvod.com,reject
 HOST-SUFFIX,qznovelvod.com,direct
 HOST-SUFFIX,praisewindow.ugsdk.cn,reject
 HOST,praisewindow-sinfonlinea.ugsdk.cn,reject
