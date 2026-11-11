@@ -33,7 +33,6 @@ DOMAIN-WILDCARD,ec*-core-lq.ecombdapi.com
 DOMAIN-WILDCARD,isaas*-normal-lq.ecombdapi.com
 DOMAIN-WILDCARD,v*-reading-ad.qznovelvod.com
 DOMAIN-WILDCARD,*-reading-ad.qznovelvod.com
-DOMAIN-WILDCARD,*-iosreadingvideo.qznovelvod.com
 DOMAIN-SUFFIX,praisewindow.ugsdk.cn
 DOMAIN,praisewindow-sinfonlinea.ugsdk.cn
 DOMAIN,zlink.ugsdk.cn
