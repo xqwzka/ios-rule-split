@@ -21,7 +21,6 @@ DOMAIN-WILDCARD,log*-applog.fqnovel.com
 DOMAIN-SUFFIX,frontier100-toutiao-lf.fqnovel.com
 DOMAIN-SUFFIX,mon11-misc-lq.fqnovel.com
 DOMAIN-WILDCARD,*-misc-lq.fqnovel.com
-DOMAIN-WILDCARD,*-misc.fqnovel.com
 DOMAIN,applog.fqnovel.com
 DOMAIN-WILDCARD,ads*-normal.zijieapi.com
 DOMAIN-WILDCARD,ads*-normal-*.zijieapi.com
@@ -32,7 +31,6 @@ DOMAIN-WILDCARD,ecom*-normal-lq.ecombdapi.com
 DOMAIN-WILDCARD,ec*-core-lq.ecombdapi.com
 DOMAIN-WILDCARD,isaas*-normal-lq.ecombdapi.com
 DOMAIN-WILDCARD,v*-reading-ad.qznovelvod.com
-DOMAIN-WILDCARD,*-reading-ad.qznovelvod.com
 DOMAIN-SUFFIX,praisewindow.ugsdk.cn
 DOMAIN,praisewindow-sinfonlinea.ugsdk.cn
 DOMAIN,zlink.ugsdk.cn
@@ -112,7 +110,6 @@ DOMAIN-SUFFIX,tobapplog.tobsnssdk.com
 DOMAIN-SUFFIX,toblog.tobsnssdk.com
 DOMAIN-SUFFIX,tsearch.snssdk.com
 DOMAIN-SUFFIX,vas-hl-x.snssdk.com
-DOMAIN-SUFFIX,video-cn.snssdk.com
 DOMAIN-SUFFIX,xlog.snssdk.com
 DOMAIN,adshare.toutiao.com
 DOMAIN-SUFFIX,ad.toutiao.com
