@@ -1,5 +1,6 @@
 # Shadowrocket
 
+- **主配置**（[config.conf](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/config.conf)）
 - **交易所**（[exchange.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/exchange.list)）
 - **屏蔽更新**（[ios-update.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/ios-update.list)）
 - **TG**（[telegram.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/telegram.list)）
@@ -12,9 +13,9 @@
 - **推送**（[apple-push.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/apple-push.list)）
 - **谷歌**（[google.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/google.list)）
 - **广告终结者**（[adblock.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock.list)）
-- **广告放行**（[adblock-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock-direct.list)）
+- **广告直连**（[adblock-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock-direct.list)）
 - **红果去广告**（[hongguo.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/hongguo.list)）
-- **红果放行**（[hongguo-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/hongguo-direct.list)）
+- **红果直连**（[hongguo-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/hongguo-direct.list)）
 - **红果去广告配置**（[HongGuo.conf](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/HongGuo.conf)）
 - **全球分流直连**（[global-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/global-direct.list)）
 - **全球分流走代理**（[global-proxy.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/global-proxy.list)）
