@@ -1,0 +1,15 @@
+# hongguo-direct
+# Mihomo rule-set, no policy (policy set in Mihomo main config)
+
+payload:
+- 'DOMAIN-SUFFIX,fqnovelvod.com'
+- 'DOMAIN-WILDCARD,v*-reading-video*.qznovelvod.com'
+- 'DOMAIN,n98-v-readingvideo.qznovelvod.com'
+- 'DOMAIN-WILDCARD,p*-novel*.byteimg.com'
+- 'DOMAIN,p3-ad-sign.byteimg.com'
+- 'DOMAIN,p3-tt.byteimg.com'
+- 'DOMAIN-WILDCARD,api*-normal.fqnovel.com'
+- 'DOMAIN-WILDCARD,api*-normal-lq.fqnovel.com'
+- 'DOMAIN-WILDCARD,frontier*-toutiao-lq.fqnovel.com'
+- 'DOMAIN-WILDCARD,lf*-reading.fqnovelstatic.com'
+- 'DOMAIN-SUFFIX,qznovelvod.com'
