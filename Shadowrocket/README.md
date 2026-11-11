@@ -13,6 +13,8 @@
 - **谷歌**（[google.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/google.list)）
 - **广告终结者**（[adblock.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock.list)）
 - **广告放行**（[adblock-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/adblock-direct.list)）
+- **红果去广告**（[hongguo.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/hongguo.list)）
+- **红果放行**（[hongguo-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/hongguo-direct.list)）
 - **全球分流直连**（[global-direct.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/global-direct.list)）
 - **全球分流走代理**（[global-proxy.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/global-proxy.list)）
 - **AI**（[ai.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/Shadowrocket/ai.list)）
