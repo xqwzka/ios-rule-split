@@ -1,6 +1,6 @@
 # Mihomo 主配置
 # 标准参考 QuantumultX/config.conf，规则全部用本仓库现有的 Mihomo yaml
-# 节点留空：proxies 里没有节点，自己加（订阅或手动添加）；策略组里已经按 QX 写好节点名（甲骨文东京/日本ipv4/dmit美西/第一个美国/9.23公司/公司一年1），加上同名节点就能用；没加节点前 Mihomo 会报找不到节点，是正常的
+# 节点留空：proxies 里没有节点，自己加（订阅或手动添加）；策略组里不写节点名，用的时候自己加
 # 注意：QX 的 rewrite / mitm Mihomo 做不了，不含
 # IPv6 保持开启（不要关）
 # 规则顺序：本地规则（CN 除外） → 交易所 → 屏蔽更新 → TG → 网页去广 → 抖音 → Meta → 谷歌 → AI → Emby → 推送 → 苹果 → 红果 → 广告 → 全球 → CN → MATCH
@@ -30,16 +30,23 @@ proxies: []
 # 节点留空，自己加（订阅或手动添加）
 
 proxy-groups:
-  # 策略组，名字/类型/成员和 QX [policy] 一致；地区组在 QX 里是按名字正则自动匹配，这里按你现在的节点写死（日本：甲骨文东京/日本ipv4，美国：dmit美西/第一个美国），以后加了新节点，把名字加到对应地区组里
+  # 策略组，名字/类型和 QX [policy] 一致；地区组在 QX 里是按名字正则自动匹配，这里组里不写节点名，用的时候自己加
   - name: PROXY
     type: select
     proxies:
-      - 甲骨文东京
-      - 日本ipv4
-      - dmit美西
-      - 第一个美国
-      - 9.23公司
-      - 公司一年1
+      - 香港
+      - 日本
+      - 新加坡
+      - 台湾
+      - 韩国
+      - 英国
+      - 美国
+      - 加拿大
+      - 德国
+      - 法国
+      - 荷兰
+      - 泰国
+      - 马来西亚
   - name: emby
     type: select
     proxies:
@@ -90,20 +97,14 @@ proxy-groups:
     type: select
     proxies:
       - PROXY
-      - 甲骨文东京
       - 日本
       - Telegram
       - 落地
       - 香港
-      - 第一个美国
-      - dmit美西
-      - 9.23公司
-      - 公司一年1
   - name: 落地
     type: select
     proxies:
       - PROXY
-      - 日本ipv4
   - name: 香港
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -116,7 +117,7 @@ proxy-groups:
     interval: 600
     tolerance: 50
     # QX 里是按名字正则自动匹配（日本|东京|大阪|埼玉|JP|Japan|Tokyo|Osaka），这里按你现在的节点写死
-    proxies: [甲骨文东京, 日本ipv4]
+    proxies: [DIRECT]
   - name: 新加坡
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,7 +148,7 @@ proxy-groups:
     interval: 600
     tolerance: 50
     # QX 里是按名字正则自动匹配（美），这里按你现在的节点写死
-    proxies: [dmit美西, 第一个美国]
+    proxies: [DIRECT]
   - name: 加拿大
     type: url-test
     url: http://www.gstatic.com/generate_204
