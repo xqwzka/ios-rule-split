@@ -13,3 +13,4 @@
 - **全球分流**（[global.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/global.list)）
 - **AI**（[ai.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/ai.list)）
 - **红果去广告**（[hongguo.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/hongguo.list)）
+- **Twitch**（[twitch.list](https://raw.githubusercontent.com/xqwzka/ios-rule-split/main/QuantumultX/twitch.list)）
